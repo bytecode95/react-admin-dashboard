@@ -4,7 +4,7 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 import {Navbar, Footer, Sidebar, ThemeSettings, LineChart} from '../components'
 import {Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor, Line} from '../pages'
 import {useStateContext} from '../contexts/ContextProvide'
-import './App.css'
+import './App.css';
 
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
               <div className='fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-ful'>
                 <Navbar/>
               </div>
-              <div>
+             
                 <Routes>
                   {/* Dashboard */}
                   <Route path='/' element={<Ecommerce/>}/>
@@ -62,6 +62,7 @@ function App() {
                   <Route path='/stacked' element={<Stacked/>}/> 
                 </Routes>
               </div>
+              <div>
         </div>
      </div>
     </>
