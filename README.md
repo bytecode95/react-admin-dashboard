@@ -1,4 +1,4 @@
-![Screenshot (758)](https://github.com/bytecode95/react-admin-dashboard/assets/138282190/8f05c94b-1b26-4074-a50f-e4627933b3b6)# React Admin Dashboard
+# React Admin Dashboard
 
 This project is a React-based admin dashboard that incorporates advanced best practices, including folder and file structure, state management using React Context API, and integration with Syncfusion for UI components.
 
