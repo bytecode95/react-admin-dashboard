@@ -9,6 +9,7 @@ import { GoDotFill } from "react-icons/go";
 import banner from '../data/welcome-bg.svg'
 
 const Ecommerce = () => {
+  const {currentColor} = useStateContext();
   return (
     <div className='mt-12'>
       <div className="flex flex-wrap lg:flex-nowrap justify-center ">
@@ -22,7 +23,7 @@ const Ecommerce = () => {
               </div>
               <button
                 type="button"
-                style={{ backgroundColor: 'blue' }}
+                style={{ backgroundColor: {currentColor} }}
                 className="text-xl opacity-0.9 text-white hover:drop-shadow-xl rounded-full p-4"
               >
                 <BsCurrencyDollar />
@@ -31,7 +32,7 @@ const Ecommerce = () => {
             <div className="mt-6 absolute left-3 bottom-2">
               <Button
                 color="white"
-                bgColor="blue"
+                bgColor={currentColor}
                 text="Download"
                 borderRadius="10px"
               />
@@ -95,12 +96,12 @@ const Ecommerce = () => {
                 <p className='text-gray-500 mt-1'> Expense </p>
               </div>
               <div className='mt-5'>
-                <SparkLine currentColor="blue" id="line-sparkLine" type="Line" height="80px" width="250px" data={SparklineAreaData} color="blue"/>
+                <SparkLine currentColor={currentColor} id="line-sparkLine" type="Line" height="80px" width="250px" data={SparklineAreaData} color={currentColor}/>
               </div>
               <div className="mt-10">
                 <Button
                   color="white"
-                  bgColor="blue"
+                  bgColor={currentColor}
                   text="Download Report"
                   borderRadius="10px"
                 />
